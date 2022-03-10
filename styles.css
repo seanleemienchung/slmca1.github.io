@@ -1,0 +1,170 @@
+header {
+  color: #404040;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  font-family: 'proxima-nova', sans-serif;
+  padding: 0px;
+  margin: 0px;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #404040;
+}
+h1 {
+  color: #404040;
+  font-weight: bold;
+  font-size: 30px;
+}
+p, a {
+  color: #404040;
+  font-size: 20px;
+}
+ul li {
+  font-family: 'proxima-nova', sans-serif;
+  color: #404040;
+  font-size: 20px;
+}
+div.a {
+  text-align: center;
+}
+table {
+  font-family: 'proxima-nova', sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+td, th {
+  border: 1px solid #404040;
+  text-align: left;
+  padding: 10px;
+}
+
+tr:nth-child(even) {
+  background-color: #e6ffe6;
+}
+
+
+/*links*/
+a:link, a:visited {
+  color:#008080;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:hover {
+  color: blue;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: darkblue;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
+/*container*/
+.container {
+  position: relative;
+}
+.bottomleft {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  background-color: #d9ffcc;
+  color: #404040;
+  text-align: left;
+  font-size: 20px;
+  padding: 10px;
+  margin: 10px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #4d4d4d;
+}
+
+
+/*paragraphs*/
+#preface {
+  background-color: #b3ffe6;
+  color: #404040;
+  text-align: center;
+  padding: 5px;
+  margin: 0px;
+}
+#title1 {
+  background-color: #d9ffcc;
+  color: #404040;
+  text-align: center;
+  font-size: 35px;
+  padding: 20px;
+  margin: 0px;
+}
+
+
+/*flexbox*/
+* {
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  background-color: #333;
+  
+}
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  flex: 17%;
+  background-image: url(image/leavesbg.jpg);
+  padding: 20px;
+  background-size: cover;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #4d4d4d;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  font-size:20px;
+  padding: 0;
+}
+
+/* Style the content */
+main {
+  flex: 83%;
+  background-color: white;
+  padding: 15px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #4d4d4d;
+}
+
+
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section, navbar {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
